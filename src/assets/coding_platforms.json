@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Codeforces",
+      "url": "https://codeforces.com/",
+      "icon": "https://codeforces.org/s/0/favicon.ico"
+    },
+    {
+      "name": "GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/",
+      "icon": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_favicon.png"
+    },
+    {
+      "name": "InterviewBit",
+      "url": "https://www.interviewbit.com/",
+      "icon": "https://www.interviewbit.com/favicon.ico"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/",
+      "icon": "https://github.githubassets.com/favicons/favicon.png"
+    },
+    {
+      "name": "ChatGPT",
+      "url": "https://chat.openai.com/",
+      "icon": "https://chat.openai.com/favicon.ico"
+    },
+    {
+      "name": "HackerRank",
+      "url": "https://www.hackerrank.com/",
+      "icon": "https://hrcdn.net/community-frontend/assets/favicon-ddc852f75a.png"
+    }
+  ]
+  

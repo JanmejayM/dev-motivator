@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Droid+Serif|Playfair+Display|Open+Sans+Condensed:300);
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'EB Garamond';
+    font-size: 32px;
+    line-height: 1.4rem;
+    height: 100%;
+    padding: .5rem;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: auto;
+     -webkit-font-smoothing: antialiased;
+             font-smoothing: antialiased;
+    font-kerning: normal;
+    color: #1A222F;
+    background: #F4FFF3;
+}
+
+p {
+    line-height: 1.4em;
+}
+
+.quote {
+    position: relative;
+    letter-spacing: .03em;
+    margin-bottom: .5rem;
+    
+    &:before {
+        content: "“";
+        position: absolute;
+        left: -.7em;
+    }
+    
+    &:after {
+        content: "”";
+        margin-right: -1rem;
+    }
+}
+
+.quote--container {
+    font-size: x-large;
+    font-family: 'JetBrains Mono';
+    margin: 4.5rem auto 0;
+    width: 30em;
+    padding-bottom: .5rem;
+    color: #00FF00;
+}
+
+.quote--highlight {
+    color: #D24335;
+}
+
+.quote--author {
+    font-family: 'Open Sans Condensed';
+    font-size: .8rem;
+    text-align: right;
+    font-weight: 300;
+}
+.platform-scroll {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+
+    /* Optional: hide scrollbar in most browsers */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+    &::-webkit-scrollbar {
+      display: none;           /* Chrome, Safari, Opera */
+    }
+
+    .platform-item {
+      flex: 0 0 auto;          /* prevent shrinking */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.2s, box-shadow 0.2s;
+
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        margin-bottom: 0.5rem;
+      }
+
+      span {
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      }
+    }
+  }
+
+  .parentContainer{
+    padding-top: 5vh;
+  }
