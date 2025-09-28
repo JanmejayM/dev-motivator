@@ -1,7 +1,10 @@
-<div class="parentContainer">
+<div class="parentContainer" [ngStyle]="{
+  'background-image': 'url(' + currentBg.imageUrl + ')'
+}">
+
   <div class="quote--container">
     <div class="card flex justify-center">
-     
+    
   </div>
     <p class="quote">
       {{displayQuote.quote}}.
@@ -19,6 +22,10 @@
       </a>
     </div>
   </div>
+
+  <button (click)="changeWalpaper()" title="Change Walpaper">
+    <img src="../assets/reset-svgrepo-com.svg" alt="Changw Walpaper" width="30" height="30" >
+   </button>
   
 
 </div>

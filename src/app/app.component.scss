@@ -6,19 +6,41 @@
             box-sizing: border-box;
 }
 
-html, body {
+.parentContainer {
     font-family: 'EB Garamond';
     font-size: 32px;
     line-height: 1.4rem;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     padding: .5rem;
+    background-image: url('../assets/bg_img/bg1.jpg'); // put your image in src/assets/images/
+    background-size: cover;       // cover entire area
+    background-position: center;  // center the image
+    background-repeat: no-repeat; // don’t repeat
+    position: relative;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: auto;
      -webkit-font-smoothing: antialiased;
              font-smoothing: antialiased;
     font-kerning: normal;
     color: #1A222F;
-    background: #F4FFF3;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4); // semi-transparent black overlay
+      z-index: 0;
+    }
+  
+    // Ensure content is on top of overlay
+    > * {
+      position: relative;
+      z-index: 1;
+    }
 }
 
 p {
