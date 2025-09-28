@@ -1,12 +1,7 @@
-// src/styles.scss or component-specific scss
-@import "primeng/resources/themes/lara-light-blue/theme.css";
-@import "primeng/resources/primeng.css";
-@import "primeicons/primeicons.css";
-
 html, body {
   height: 100%;
   width: 100%;
-  background-image: url('./assets/bg_img/bg6.jpg'); // put your image in src/assets/images/
+  background-image: url('./assets/bg_img/bg1.jpg'); // put your image in src/assets/images/
   background-size: cover;       // cover entire area
   background-position: center;  // center the image
   background-repeat: no-repeat; // don’t repeat
