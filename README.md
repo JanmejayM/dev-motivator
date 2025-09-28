@@ -1,27 +1,43 @@
 # DevMotivator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+DevMotivator is a Chrome extension designed to inspire developers by displaying motivational quotes and beautiful wallpapers every time you open a new tab. Built with Angular and powered by Unsplash for stunning visuals, it's the perfect companion to boost your productivity and mindset.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Features
 
-## Code scaffolding
+- **Fresh Quotes Daily**: Start your day with a new motivational quote.
+- **Stunning Wallpapers**: Enjoy high-quality images sourced from Unsplash.
+- **Minimalistic Design**: Focus on what matters with a clean and distraction-free interface.
+- **Open Source**: Built with Angular and available for contributions.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🛠️ Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### For Developers
 
-## Running unit tests
+1. Clone the repository:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+git clone https://github.com/JanmejayM/dev-motivator.git
+cd dev-motivator
 
-## Running end-to-end tests
+2. Install dependencies:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm install
 
-## Further help
+3. Build the project:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+ng build --configuration=production
+
+### Load in Chrome
+
+- Open Chrome and go to `chrome://extensions/`
+- Enable **Developer mode** (top-right toggle)
+- Click **Load unpacked**
+- Select the `dist/dev-motivator` folder (generated after `ng build --configuration=production`)
+- The extension should now appear in your Chrome toolbar
+
